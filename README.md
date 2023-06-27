@@ -64,7 +64,7 @@ V. Analyze
 Activity Levels:
 
 We found a strong correlation between physical activity and the calories burned, indicating that as physical activity increased, so did the calories burned. Notably, the majority of users were more lightly active or sedentary. We also found that 'Very Active Minutes' tend to be less common, suggesting that most users are not involved in intense workouts regularly.
-![Alt Text]()
+![Alt Text](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/Activity%20Index%20%20scaled.jpeg)
 Sleep Patterns:
 ![Alt Text]()
 Our analysis showed that users often get less than the recommended 7-9 hours of sleep per night. This lack of sleep can influence overall fitness, energy levels, and other aspects of daily life.
