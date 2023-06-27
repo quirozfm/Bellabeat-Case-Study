@@ -47,7 +47,7 @@ Sršen knows that an analysis of Bellabeat’s available consumer data would rev
 asked the marketing analytics team to focus on a Bellabeat product and analyze smart device usage data in order to gain
 insight into how people are already using their smart devices. Then, using this information, she would like high-level
 recommendations for how these trends can inform Bellabeat marketing strategy.  
-[Download archive.zip](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/archive.zip)
+
 
 I. Executive Summary
 
@@ -60,11 +60,57 @@ The key business question we aim to answer is: How are consumers using Bellabeat
 III. Prepare
 
 We used the Fitbit Fitness Tracker dataset and data from Bellabeat's devices. The dataset includes measures of physical activity, sleep quality, and heart rate. These data are considered reliable, as they come directly from users' trackers, making it a firsthand source.
+[Download archive.zip](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/archive.zip)
 
+R.
+
+    install.packages("here")
+    library(here)
+    install.packages("skimr")
+    library(skimr)
+    install.packages(tidyverse)
+    library(tidyverse)
+    install.packages("dplyer")
+    library(dplyer)
+    install.packages("janitor")
+    library(janitor)
+    library(readr)
+    
+    GreatValueFitbit <- read_csv("F:/Fitabase Data 4.12.16-5.12.16/dailyActivity_merged.csv")
+    
+    
+  
 IV. Process
 
 We performed thorough data cleaning, ensuring the data was suitable for analysis. This involved removing any incomplete or incorrect entries, handling missing values, and ensuring consistency in the data.
+~~~
+colnames(GreatValueFitbit)
+    
+skim_without_charts(GreatValueFitbit)
+    
+Activity_Distribution <- subset(GreatValueFitbit, select = c("VeryActiveMinutes", "FairlyActiveMinutes", "LightlyActiveMinutes", "SedentaryMinutes"))
+summary_Activity_Distribution <- summary(Activity_Distribution)
+print(summary_Activity_Distribution)
+# Melt the dataframe to long format for plotting
+Activity_Distribution_long <- Activity_Distribution %>%
+  pivot_longer(cols = everything(), names_to = "ActivityType", values_to = "Minutes")
 
+ggplot(Activity_Distribution_long, aes(x = ActivityType, y = Minutes)) +
+  geom_boxplot() +
+  theme_minimal() +
+  labs(title = "Activity Distribution", x = "Activity Type", y = "Minutes")
+
+GreatValueFitbit$TotalActiveMinutes <- GreatValueFitbit$VeryActiveMinutes + GreatValueFitbit$FairlyActiveMinutes + GreatValueFitbit$LightlyActiveMinutes
+
+ggplot(GreatValueFitbit, aes(x = TotalActiveMinutes, y = Calories)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(title = "Relationship between Activity and Calorie Burn", x = "Total Active Minutes", y = "Calories Burned")
+
+TotalActiveMinutes <- subset (GreatValueFitbit, select = c(VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes,Calories))
+str(TotalActiveMinutes)
+~~~
+    
 V. Analyze
 
 Activity Levels:
