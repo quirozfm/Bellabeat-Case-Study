@@ -111,7 +111,25 @@ ggplot(GreatValueFitbit, aes(x = TotalActiveMinutes, y = Calories)) +
 TotalActiveMinutes <- subset (GreatValueFitbit, select = c(VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes,Calories))
 str(TotalActiveMinutes)
 
+sleep_data <- read.csv("F:/Fitabase Data 4.12.16-5.12.16/sleepDay_merged.csv")
+sleep <- subset(sleep_data, select =c(TotalTimeInBed, TotalTimeAsleep)
+summary(sleep)
 
+sleep_data$Index <- seq.int(nrow(sleep_data))
+
+sleep_data <- tail(sleep_data, 30) 
+          
+avg_sleep_data <- sleep_data %>%
+group_by(Index) %>%
+summarise(AverageTimeInBed = mean(TotalTimeInBed),
+AverageMinutesAsleep = mean(TotalMinutesAsleep))               
+
+ggplot(avg_sleep_data, aes(x = factor(Index))) +
+  geom_bar(aes(y = AverageTimeInBed), stat = "identity", fill = "darkblue", alpha = 0.7, width = 0.4, position = 'dodge') +
+  geom_bar(aes(y = AverageMinutesAsleep), stat = "identity", fill = "darkgreen", alpha = 0.7, width = 0.4, position = 'dodge') +
+  labs(x = "Index", y = "Average Time (minutes)",
+title = "Comparison of Average Time in Bed and Time Asleep") +
+theme_minimal()               
 
 ~~~
     
