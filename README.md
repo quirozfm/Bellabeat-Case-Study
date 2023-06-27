@@ -46,7 +46,7 @@ Display Network to support campaigns around key marketing dates.
 Sršen knows that an analysis of Bellabeat’s available consumer data would reveal more opportunities for growth. She has
 asked the marketing analytics team to focus on a Bellabeat product and analyze smart device usage data in order to gain
 insight into how people are already using their smart devices. Then, using this information, she would like high-level
-recommendations for how these trends can inform Bellabeat marketing strategy.
+recommendations for how these trends can inform Bellabeat marketing strategy.  
 [Download archive.zip](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/archive.zip)
 
 I. Executive Summary
