@@ -39,7 +39,8 @@ Display Network to support campaigns around key marketing dates.
 Sršen knows that an analysis of Bellabeat’s available consumer data would reveal more opportunities for growth. She has
 asked the marketing analytics team to focus on a Bellabeat product and analyze smart device usage data in order to gain
 insight into how people are already using their smart devices. Then, using this information, she would like high-level
-recommendations for how these trends can inform Bellabeat marketing strategy. ![Alt Text](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/archive.zip)
+recommendations for how these trends can inform Bellabeat marketing strategy.
+<a href="(https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/archive.zip)"
 
 
 
@@ -66,6 +67,7 @@ Activity Levels:
 We found a strong correlation between physical activity and the calories burned, indicating that as physical activity increased, so did the calories burned. Notably, the majority of users were more lightly active or sedentary. We also found that 'Very Active Minutes' tend to be less common, suggesting that most users are not involved in intense workouts regularly.
 
 ![Alt Text](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/Activity%20Distribution%20Box.jpeg) ![Alt Text](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/Activity%20Index%20%20scaled.jpeg)
+![Alt Text](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/Activity%20vs%20Calorie%20Burn%20Scatter.jpeg)
 
 Sleep Patterns:
 
