@@ -84,7 +84,18 @@ R.
   
 IV. Process
 
-We performed thorough data cleaning, ensuring the data was suitable for analysis. For the particular data we were interested in we did not have to deal with missing variables or duplicates. We did however, have to create an index for ease of plotting. 
+We performed thorough data cleaning, ensuring the data was suitable for analysis. For the particular data we were interested in we did not have to deal with missing variables or duplicates. We did however, have to create an index for ease of plotting. I. Boxplot of Activity Distribution
+
+a. Boxplot
+The first graph is a boxplot that showcases the distribution of different types of activities (Very Active, Fairly Active, Lightly Active, and Sedentary). This plot was chosen because it provides a visual summary of multiple aspects of the distribution of a dataset, including the median, quartiles, outliers, and overall spread of the data. This helps to understand how much time users typically spend in each activity level, which is crucial in knowing their preferences and habits.
+
+b. Scatterplot of Total Activity Minutes and Calories Burned
+
+The second graph is a scatterplot showing the relationship between the total active minutes and the calories burned by the users. It also includes a line of best fit to make the relationship clearer. This plot was chosen as it gives a visual representation of the correlation between the two variables. If there's a strong relationship, this could be key in understanding how activity levels affect calorie burn, which could be useful information for users aiming for weight loss or maintenance.
+
+c. Barplot of Average Time in Bed and Time Asleep
+
+The third graph is a barplot comparing the average time users spend in bed and the actual time they are asleep. This graph was chosen because it helps understand the sleep patterns of users - how long they are spending in bed versus how much of that time is spent asleep. This could provide insights into potential issues such as difficulty falling asleep or staying asleep, which could be areas Bellabeat might want to address in their products or services.
 ~~~
 colnames(GreatValueFitbit)
 
