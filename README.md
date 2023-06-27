@@ -48,6 +48,7 @@ asked the marketing analytics team to focus on a Bellabeat product and analyze s
 insight into how people are already using their smart devices. Then, using this information, she would like high-level
 recommendations for how these trends can inform Bellabeat marketing strategy.  
 
+[Follow Along Presentation](Bellabeatppt.pdf)
 
 I. Executive Summary
 
