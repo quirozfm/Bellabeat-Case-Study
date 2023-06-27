@@ -60,7 +60,7 @@ The key business question we aim to answer is: How are consumers using Bellabeat
 
 III. Prepare
 
-We used the Fitbit Fitness Tracker dataset and data from Bellabeat's devices. The dataset includes measures of physical activity, sleep quality, and heart rate. These data are considered reliable, as they come directly from users' trackers, making it a firsthand source. For the particular data we were interested in we did not have to deal with missing variables or duplicates. We did however, have to create an index for ease of plotting.
+We used the Fitbit Fitness Tracker dataset and data from Bellabeat's devices. The dataset includes measures of physical activity, sleep quality, and heart rate. These data are considered reliable, as they come directly from users' trackers, making it a firsthand source. 
 [Download archive.zip](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/archive.zip)
 
 R.
@@ -84,7 +84,7 @@ R.
   
 IV. Process
 
-We performed thorough data cleaning, ensuring the data was suitable for analysis. This involved removing any incomplete or incorrect entries, handling missing values, and ensuring consistency in the data.
+We performed thorough data cleaning, ensuring the data was suitable for analysis. For the particular data we were interested in we did not have to deal with missing variables or duplicates. We did however, have to create an index for ease of plotting. 
 ~~~
 colnames(GreatValueFitbit)
 
