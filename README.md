@@ -79,13 +79,14 @@ R.
     GreatValueFitbit <- read_csv("F:/Fitabase Data 4.12.16-5.12.16/dailyActivity_merged.csv")
     
     
+    
   
 IV. Process
 
 We performed thorough data cleaning, ensuring the data was suitable for analysis. This involved removing any incomplete or incorrect entries, handling missing values, and ensuring consistency in the data.
 ~~~
 colnames(GreatValueFitbit)
-    
+
 skim_without_charts(GreatValueFitbit)
     
 Activity_Distribution <- subset(GreatValueFitbit, select = c("VeryActiveMinutes", "FairlyActiveMinutes", "LightlyActiveMinutes", "SedentaryMinutes"))
@@ -109,6 +110,9 @@ ggplot(GreatValueFitbit, aes(x = TotalActiveMinutes, y = Calories)) +
 
 TotalActiveMinutes <- subset (GreatValueFitbit, select = c(VeryActiveMinutes, FairlyActiveMinutes, LightlyActiveMinutes,Calories))
 str(TotalActiveMinutes)
+
+
+
 ~~~
     
 V. Analyze
