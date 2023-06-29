@@ -84,7 +84,7 @@ R.
   
 IV. Process
 
-We performed thorough data cleaning, ensuring the data was suitable for analysis. For the particular data we were interested in we did not have to deal with missing variables or duplicates. We did however, have to create an index for ease of plotting. I. Boxplot of Activity Distribution
+We performed thorough data cleaning, ensuring the data was suitable for analysis. For the particular data we were interested in we did not have to deal with missing variables or duplicates. We did however, have to create an index for ease of plotting. 
 
 a. Boxplot
 The first graph is a boxplot that showcases the distribution of different types of activities (Very Active, Fairly Active, Lightly Active, and Sedentary). This plot was chosen because it provides a visual summary of multiple aspects of the distribution of a dataset, including the median, quartiles, outliers, and overall spread of the data. This helps to understand how much time users typically spend in each activity level, which is crucial in knowing their preferences and habits.
