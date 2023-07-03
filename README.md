@@ -17,7 +17,7 @@ III. Prepare
 We used the Fitbit Fitness Tracker dataset and data from Bellabeat's devices. The dataset includes measures of physical activity, sleep quality, and heart rate. These data are considered reliable, as they come directly from users' trackers, making it a firsthand source. 
 [Download archive.zip](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/archive.zip)
 
-[R.](Bellabeat R Script.R)
+[R. (Programming Language)](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/Bellabeat%20R%20Script.R)
 
     install.packages("here")
     library(here)
