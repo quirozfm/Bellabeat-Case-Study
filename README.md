@@ -17,7 +17,7 @@ III. Prepare
 We used the Fitbit Fitness Tracker dataset and data from Bellabeat's devices. The dataset includes measures of physical activity, sleep quality, and heart rate. These data are considered reliable, as they come directly from users' trackers, making it a firsthand source. 
 [Download archive.zip](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/archive.zip)
 
-R.
+[R.](Bellabeat R Script.R)
 
     install.packages("here")
     library(here)
@@ -135,9 +135,11 @@ We found a strong correlation between physical activity and the calories burned,
 Sleep Patterns:
 
 Our analysis showed that users often get less than the recommended 7-9 hours of sleep per night. This lack of sleep can influence overall fitness, energy levels, and other aspects of daily life.
-![Alt Text](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/avgSleepOverTime.jpeg)
-![Alt Text](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/Sleep%20over%20time.jpeg)
 
+![Alt Text](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/Sleep%20over%20time.jpeg)
+![Alt Text](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/avgSleepOverTime.jpeg)
+
+When we take a closer look, we can see that the average sleep overtime increased towards the end of the month and beginning of the month. 
 VI. Share
 
 Based on our findings, we would recommend the following strategies:
