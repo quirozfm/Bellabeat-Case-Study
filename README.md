@@ -160,7 +160,7 @@ We found a strong correlation between physical activity and the calories burned,
 Sleep Patterns:
 
 Our analysis showed that users often get less than the recommended 7-9 hours of sleep per night. This lack of sleep can influence overall fitness, energy levels, and other aspects of daily life.
-
+![Alt Text](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/avgSleepOverTime.jpeg)
 ![Alt Text](https://github.com/quirozfm/Bellabeat-Case-Study/blob/main/Sleep%20over%20time.jpeg)
 
 VI. Share
